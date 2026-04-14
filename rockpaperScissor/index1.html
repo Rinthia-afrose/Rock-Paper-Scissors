@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <div class="game-card">
+  <!-- START SCREEN -->
+  <div id="start-screen">
+    <h1>Rock Paper Scissors</h1>
+    <h3>Select your weapon:</h3>
+
+    <button onclick="play('rock')" id="btn1">✊</button>
+    <button onclick="play('paper')"id="btn1">✋</button>
+    <button onclick="play('scissors')" id="btn1">✌️</button>
+
+    <div id="score">
+      Win: 0 | Loss: 0 | Draw: 0
+    </div>
+  </div>
+
+  <!-- RESULT SCREEN -->
+  <div id="result-screen" style="display: none;">
+    <h1>Rock Paper Scissors</h1>
+
+    <h2>You vs Computer</h2>
+
+    <div id="hands">
+      <span id="user-hand" class="left-hand"></span>
+      vs
+      <span id="comp-hand" class="right-hand"></span>
+    </div>
+
+    <h3 id="result-text"></h3>
+
+    <button onclick="playAgain()">Play Again</button>
+
+    <div id="score">
+      Win: 0 | Loss: 0 | Draw: 0
+    </div>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+ 

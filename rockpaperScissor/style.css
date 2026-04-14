@@ -1,0 +1,80 @@
+body {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+}
+.game-card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 15px;
+  width: 350px;
+  margin: 50px auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+#result-screen {
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+button {
+  background: #1e293b;
+  border: none;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+} 
+button:hover {
+  background: #334155;
+}
+
+#btn1 {
+  font-size: 40px;
+  margin: 10px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+#hands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-size: 80px;
+  margin-top: 30px;
+}
+.left-hand {
+  transform: rotate(90deg);   /* facing right */
+}
+
+.right-hand {
+  transform: rotate(-90deg);  /* facing left */
+}
+@keyframes shakeLeft {
+  0%   { transform: translateX(0) rotate(90deg); }
+  50%  { transform: translateX(30px) rotate(90deg); }
+  100% { transform: translateX(0) rotate(90deg); }
+}
+
+@keyframes shakeRight {
+  0%   { transform: translateX(0) rotate(-90deg); }
+  50%  { transform: translateX(-30px) rotate(-90deg); }
+  100% { transform: translateX(0) rotate(-90deg); }
+}
+.shake-left {
+  animation: shakeLeft 0.4s ease-in-out 3;
+}
+
+.shake-right {
+  animation: shakeRight 0.4s ease-in-out 3;
+}
+
+#user-hand, #comp-hand {
+  display: inline-block;
+}
