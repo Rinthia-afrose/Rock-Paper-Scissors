@@ -13,6 +13,3 @@ A simple interactive Rock Paper Scissors game built using HTML, CSS, and JavaScr
 - CSS
 - JavaScript
 
----
-
-Made with ❤️ by Afrose
